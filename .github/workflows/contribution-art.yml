@@ -1,0 +1,82 @@
+name: One-time contribution graph art
+
+# This workflow creates SYNTHETIC decorative commits, not actual development work.
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/contribution-art.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-art-one-time
+  cancel-in-progress: false
+
+jobs:
+  paint:
+    if: github.repository == 'Cliff263/Cliff263'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Check for earlier run
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git log -1 --all --grep='^art: decorative contribution square' --format='%H' | grep -q .; then
+            echo 'Existing synthetic art commits detected; refusing to duplicate.'
+            exit 1
+          fi
+      - name: Generate dated synthetic calendar art
+        shell: bash
+        env:
+          GIT_AUTHOR_NAME: Takunda Cliff Jaure
+          GIT_AUTHOR_EMAIL: cliffjaure263@gmail.com
+          GIT_COMMITTER_NAME: Takunda Cliff Jaure
+          GIT_COMMITTER_EMAIL: cliffjaure263@gmail.com
+          EXTRA_COMMITS: '1540'
+        run: |
+          set -euo pipefail
+          python3 - <<'PY' > "$RUNNER_TEMP/contribution-art-dates.txt"
+          import datetime as dt
+          import random
+          import os
+
+          total = int(os.environ['EXTRA_COMMITS'])
+          rng = random.Random(2632026)
+          start, end = dt.date(2025, 10, 14), dt.date(2026, 10, 12)
+          days = (end - start).days + 1
+          counts = [min(total // days, 2)] * days
+          weights = [2 if (start + dt.timedelta(days=i)).weekday() < 5 else 1 for i in range(days)]
+          for _ in range(total - sum(counts)):
+              counts[rng.choices(range(days), weights=weights)[0]] += 1
+          tz = dt.timezone(dt.timedelta(hours=2))
+          stamps = []
+          for i, n in enumerate(counts):
+              day = start + dt.timedelta(days=i)
+              for _ in range(n):
+                  stamps.append(dt.datetime(day.year, day.month, day.day, rng.randint(8,21),
+                                            rng.randint(0,59),rng.randint(0,59),tzinfo=tz))
+          assert len(stamps) == total
+          for ts in sorted(stamps):
+              print(ts.isoformat())
+          PY
+          count=0
+          while IFS= read -r timestamp; do
+            GIT_AUTHOR_DATE="$timestamp" GIT_COMMITTER_DATE="$timestamp" \
+              git commit --allow-empty -q -m 'art: decorative contribution square (synthetic; not software work)'
+            count=$((count + 1))
+          done < "$RUNNER_TEMP/contribution-art-dates.txt"
+          test "$count" -eq "$EXTRA_COMMITS"
+          echo "Generated $count decorative Git commits."
+      - name: Publish without force-push
+        shell: bash
+        run: |
+          set -euo pipefail
+          git push origin HEAD:refs/heads/main
+          echo 'Contribution art published; GitHub indexing may take up to 24h.'
