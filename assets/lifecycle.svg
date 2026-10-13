@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 193" role="img" aria-labelledby="pt pd">
+<title id="pt">Product lifecycle from discovery to continuous improvement</title>
+<desc id="pd">Five connected neon process cards labeled Discover, Architect, Build, Deploy and Evolve with an animated signal moving across.</desc>
+<defs><linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1228"/><stop offset="1" stop-color="#111933"/></linearGradient><linearGradient id="road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#43dce7"/><stop offset=".5" stop-color="#9c89fa"/><stop offset="1" stop-color="#fb90cc"/></linearGradient><clipPath id="pc"><rect x="2" y="2" width="996" height="189" rx="18"/></clipPath></defs>
+<g clip-path="url(#pc)">
+<rect x="2" y="2" width="996" height="189" rx="18" fill="url(#pbg)"/>
+<g opacity=".1" stroke="#9dc9ed"><path d="M0 45H1000 M0 80H1000 M0 115H1000 M0 150H1000"/></g>
+<text x="28" y="31" fill="#acb9d8" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">FROM AMBIGUITY TO WORKING SOFTWARE</text>
+<path d="M90 102H912" stroke="#2f4163" stroke-width="5" stroke-linecap="round"/>
+<path d="M90 102H912" stroke="url(#road)" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 11"/>
+<circle cx="90" cy="102" r="6" fill="#68faf0"><animate attributeName="cx" values="90;912;90" dur="10s" repeatCount="indefinite"/></circle>
+<g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
+<g><rect x="25" y="61" rx="13" width="165" height="83" fill="#14223d" stroke="#3ecad9"/><text x="107" y="88" fill="#70ebef" font-size="12" letter-spacing="1.5">01 / RESEARCH</text><text x="107" y="114" fill="#edf6ff" font-size="21" font-weight="700">Discover</text><text x="107" y="132" fill="#9dadc9" font-size="11">Market · Users · Feasibility</text></g>
+<g><rect x="222" y="61" rx="13" width="165" height="83" fill="#17213e" stroke="#6a9feb"/><text x="304" y="88" fill="#9dbefa" font-size="12" letter-spacing="1.5">02 / DESIGN</text><text x="304" y="114" fill="#edf6ff" font-size="21" font-weight="700">Architect</text><text x="304" y="132" fill="#9dadc9" font-size="11">Contracts · Systems</text></g>
+<g><rect x="419" y="61" rx="13" width="165" height="83" fill="#1d203e" stroke="#987df2"/><text x="501" y="88" fill="#c4afff" font-size="12" letter-spacing="1.5">03 / ENGINEER</text><text x="501" y="114" fill="#edf6ff" font-size="21" font-weight="700">Build</text><text x="501" y="132" fill="#9dadc9" font-size="11">Full-stack · Tests</text></g>
+<g><rect x="616" y="61" rx="13" width="165" height="83" fill="#24203d" stroke="#bb84e8"/><text x="698" y="88" fill="#e3b4fc" font-size="12" letter-spacing="1.5">04 / OPERATE</text><text x="698" y="114" fill="#edf6ff" font-size="21" font-weight="700">Deploy</text><text x="698" y="132" fill="#9dadc9" font-size="11">CI/CD · Cloud · Logs</text></g>
+<g><rect x="813" y="61" rx="13" width="165" height="83" fill="#261e37" stroke="#f08fcd"/><text x="896" y="88" fill="#f8afd8" font-size="12" letter-spacing="1.5">05 / ITERATE</text><text x="896" y="114" fill="#edf6ff" font-size="21" font-weight="700">Evolve</text><text x="896" y="132" fill="#9dadc9" font-size="11">Insights · Security</text></g>
+</g>
+<text x="28" y="176" fill="#8193bc" font-family="Segoe UI,Arial,sans-serif" font-size="12">Product development is engineering, research and delivery — connected.</text>
+</g><rect x="2" y="2" width="996" height="189" rx="18" fill="none" stroke="#566fbc" opacity=".65"/>
+</svg>
