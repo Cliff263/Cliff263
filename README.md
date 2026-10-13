@@ -140,11 +140,11 @@ I work through the complete product lifecycle: **discovery → research → requ
 </tr>
 <tr>
 <td align="center"><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Cliff263&theme=radical&bg_color=17182b&title_color=70e4ed&text_color=e5e9ff&border_color=4e4b84&icon_color=69e9e6&chart_color=a68cff&animation=draw&duration=3" alt="GitHub statistics summary for Cliff263" width="100%"/></td>
-<td align="center"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Cliff263&theme=radical&utcOffset=2&bg_color=17182b&title_color=70e4ed&text_color=e5e9ff&border_color=4e4b84&icon_color=69e9e6&chart_color=a68cff&animation=draw&duration=3" alt="Public GitHub commit activity by hour, UTC plus two" width="100%"/></td>
+<td align="center"><img src="./assets/productive-time.svg" alt="Locally hosted GitHub commit-hour chart for Cliff263, based on 196 attributed commits in selected repositories during the past year, Harare UTC+02:00" width="100%"/></td>
 </tr>
 </table>
 
-<sub>Cards query the Cliff263 account, not the account in the reference screenshot. Public data and private-contribution visibility depend on GitHub permissions/settings. Stats are illustrative of GitHub activity, not a measure of total engineering work. Cards are rendered by the GitHub Profile Summary Cards service.</sub>
+<sub>Most cards use an external statistics provider and can be temporarily rate-limited. The <b>Productive Time</b> chart is now a reliable, repository-hosted snapshot (13 Oct 2026) of 196 attributed commits in selected repositories, including private work, aggregated without exposing private code or commit details. It is not live; GitHub commit timestamps are not a measure of hours worked.</sub>
 
 </div>
 
