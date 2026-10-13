@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" role="img" aria-labelledby="ft fd">
+<title id="ft">Let's build something worth shipping</title><desc id="fd">Neon cyan and violet footer banner with gently animated signal lines.</desc>
+<defs><linearGradient id="fb" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0a1529"/><stop offset=".6" stop-color="#151630"/><stop offset="1" stop-color="#19132d"/></linearGradient><linearGradient id="fl" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4ce5ed"/><stop offset=".5" stop-color="#9c84f6"/><stop offset="1" stop-color="#f38dc8"/></linearGradient></defs>
+<rect x="2" y="2" width="996" height="96" rx="17" fill="url(#fb)" stroke="#575d9e"/>
+<path d="M27 25V74 M36 49H170 M833 49H962 M973 25V74" stroke="url(#fl)" stroke-width="2" opacity=".9"/>
+<circle cx="143" cy="49" r="4" fill="#5df5f0"><animate attributeName="cx" values="45;163;45" dur="4s" repeatCount="indefinite"/></circle>
+<circle cx="849" cy="49" r="4" fill="#ef8dcd"><animate attributeName="cx" values="849;954;849" dur="4s" repeatCount="indefinite"/></circle>
+<g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle"><text x="500" y="48" fill="#edf1fe" font-size="27" font-weight="800" letter-spacing="1.2">LET'S BUILD WHAT'S NEXT</text><text x="500" y="73" fill="#a7b6d4" font-size="14" letter-spacing="1.6">FULL-STACK · CLOUD · PRODUCT SYSTEMS</text></g>
+</svg>
