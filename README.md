@@ -8,7 +8,7 @@ I design, build, and help operate software products—from early research, feasi
 
 ## What I work on
 
-- **Full-stack engineering:** TypeScript, React, Next.js, Node.js, NestJS, REST APIs, PostgreSQL, Prisma, Drizzle, Flutter and responsive UI systems.
+- **Full-stack engineering:** TypeScript, React, Next.js, Node.js, NestJS,Rust, REST APIs, PostgreSQL, Prisma, Drizzle, Flutter and responsive UI systems.
 - **Cloud & DevOps:** AWS, Docker, Kubernetes, Terraform, Ansible, GitHub Actions, CI/CD, Nginx, Hetzner, Cloudflare, Prometheus and Grafana.
 - **Product development:** discovery interviews, market/competitor research, product requirements, feasibility analysis, domain modeling, solution architecture, roadmaps, design handoffs and iterative delivery.
 - **AI & security:** OpenAI API integration, embeddings/pgvector, MCP integrations, OAuth 2.1, fine-grained authorization, privacy-aware tooling, security reviews and AI governance research.
