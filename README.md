@@ -161,6 +161,6 @@ I work through the complete product lifecycle: **discovery → research → requ
 
 <img src="./assets/footer.svg" alt="Animated neon banner inviting collaboration" width="100%" />
 
-<sub>Made with Markdown + lightweight animated SVG. No JavaScript, npm packages or embedded tracking scripts required.</sub>
+<sub>SirCliff@IsodyneTechnologies.</sub>
 
 </div>
